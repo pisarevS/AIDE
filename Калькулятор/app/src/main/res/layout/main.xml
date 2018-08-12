@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@drawable/image_15"
+	android:paddingTop="60dp"
+	android:paddingLeft="20dp"
+	android:paddingRight="20dp">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:background="#0DB2B2">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="47dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="Дата:"
+			android:textColor="#000000"
+			android:gravity="left|center"
+			android:shadowDx="5"
+			android:shadowRadius="5"
+			android:paddingLeft="10dp"/>
+
+		<TextView
+			android:text="00.00.0000"
+			android:id="@+id/mainTextViewDate"
+			android:layout_width="wrap_content"
+			android:layout_height="47dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#000000"
+			android:gravity="center_vertical"
+			android:paddingLeft="15dp"
+			android:paddingRight="10dp"/>
+
+		<Spinner
+			android:id="@+id/mainSpinner"
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:popupBackground="#0DB2B2"
+			android:background="#0DB2B2"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"/>
+
+		<Spinner
+			android:id="@+id/mainSpinner1"
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:popupBackground="#0DB2B2"
+			android:background="#0DB2B2"
+			android:paddingLeft="5dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="47dp"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="Проточено"
+				android:textColor="#000000"
+				android:gravity="left|center"
+				android:shadowDx="5"
+				android:shadowRadius="5"
+				android:paddingLeft="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="47dp"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="Простой / \nперестройка"
+				android:textColor="#000000"
+				android:gravity="left|center"
+				android:shadowDx="5"
+				android:shadowRadius="5"
+				android:paddingLeft="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="47dp"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="Проточено после \nперестройки"
+				android:textColor="#000000"
+				android:gravity="left|center"
+				android:shadowDx="5"
+				android:shadowRadius="5"
+				android:paddingLeft="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="47dp"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="% за смену"
+				android:textColor="#000000"
+				android:gravity="center"
+				android:shadowDx="5"
+				android:shadowRadius="5"
+				android:paddingLeft="10dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="80dp"
+			android:orientation="vertical"
+			android:gravity="center">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/mainEditTextOne"
+					android:inputType="number|numberDecimal"
+					android:layout_width="wrap_content"
+					android:ems="3"
+					android:layout_height="wrap_content"
+					android:gravity="center"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<TextView
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:layout_height="47dp"
+					android:gravity="center"
+					android:onClick="setTime"
+					android:id="@+id/time"
+					android:text="00:00"
+					android:textColor="#000000"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/mainEditTextTwo"
+					android:inputType="number|numberDecimal"
+					android:layout_width="wrap_content"
+					android:ems="3"
+					android:layout_height="wrap_content"
+					android:gravity="center"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal"
+				android:layout_weight="1.0">
+
+				<TextView
+					android:id="@+id/mainTextView"
+					android:layout_width="80dp"
+					android:layout_height="47dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:gravity="center"
+					android:textColor="#16F42D"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<Spinner
+				android:id="@+id/mainSpinnerOne"
+				android:layout_height="47dp"
+				android:layout_width="wrap_content"
+				android:gravity="center"
+				android:paddingRight="15dp"
+				android:popupBackground="#0DB2B2"/>
+
+			<LinearLayout
+				android:layout_height="47dp"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"/>
+
+			<Spinner
+				android:id="@+id/mainSpinnerTwo"
+				android:layout_height="47dp"
+				android:layout_width="wrap_content"
+				android:gravity="center"
+				android:paddingRight="15dp"
+				android:popupBackground="#0DB2B2"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="Medium Text"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="90dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<Button
+			android:onClick="onClick"
+			android:id="@+id/mainButton"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="ENTER"
+			android:background="#0DB2B2"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
